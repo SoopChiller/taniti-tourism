@@ -1,0 +1,215 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visit Taniti | Plan Your Island Trip</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Visit Taniti</h1>
+    <p>Your guide to exploring the island</p>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#activities">Things to Do</a>
+      <a href="#lodging">Places to Stay</a>
+      <a href="#transportation">Getting Around</a>
+      <a href="#dining">Food &amp; Dining</a>
+      <a href="#visitor-info">Visitor Info</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <h2>Discover Taniti</h2>
+      <p>
+        Beaches, tropical rainforest, an active volcano,
+        and welcoming island communities. Find what you
+        need to plan your visit.
+      </p>
+      <a class="button" href="#activities">Explore Things to Do</a>
+    </section>
+
+    <section id="activities">
+      <h2>Things to Do</h2>
+      <p>
+        Explore Taniti's favorite attractions. Choose an
+        activity to see details and planning information.
+      </p>
+
+      <div class="cards">
+        <article class="card">
+          <h3>Beaches</h3>
+          <p>Relax on the sandy shores around Yellow Leaf Bay.</p>
+          <button type="button" class="button activity-button"
+                  data-activity="beaches">
+            View Details &amp; Planning
+          </button>
+        </article>
+
+        <article class="card">
+          <h3>Rainforest Adventures</h3>
+          <p>Discover rainforest hiking trails and zip-lining opportunities.</p>
+          <button type="button" class="button activity-button"
+                  data-activity="rainforest">
+            View Details &amp; Booking Info
+          </button>
+        </article>
+
+        <article class="card">
+          <h3>Volcano Sightseeing</h3>
+          <p>Explore the mountainous interior and visit the active volcano.</p>
+          <button type="button" class="button activity-button"
+                  data-activity="volcano">
+            View Details &amp; Booking Info
+          </button>
+        </article>
+      </div>
+
+      <div id="activity-details" class="details"
+           hidden tabindex="-1" aria-live="polite"></div>
+    </section>
+
+    <section id="lodging">
+      <h2>Places to Stay</h2>
+      <p>
+        Taniti offers a four-star resort, small family-owned
+        hotels, bed and breakfasts, and a budget-friendly hostel.
+        Lodging is regulated and regularly inspected.
+      </p>
+
+      <button type="button" id="lodging-toggle" class="button"
+              aria-expanded="false" aria-controls="lodging-details">
+        View Lodging &amp; Booking Info
+      </button>
+
+      <div id="lodging-details" class="details" hidden>
+        <h3>Choose an Accommodation</h3>
+        <p>
+          Compare a resort, family-owned hotel, bed and breakfast,
+          or hostel based on your group's needs and budget.
+        </p>
+        <p>
+          <strong>Booking information:</strong>
+          This is a school prototype. No live hotel inventory or
+          reservation service is connected. Check directly with
+          your chosen accommodation before booking.
+        </p>
+        <a class="button secondary" href="#transportation">
+          See Transportation Options
+        </a>
+      </div>
+    </section>
+
+    <section id="transportation">
+      <h2>Getting Around</h2>
+      <div class="info-grid">
+        <div>
+          <h3>Public Buses</h3>
+          <p>
+            Taniti City buses operate from 5 a.m. to 11 p.m.
+            daily. Private buses serve other parts of the island.
+          </p>
+        </div>
+        <div>
+          <h3>Cars &amp; Taxis</h3>
+          <p>
+            Taxis are available in Taniti City.
+            Rental cars are available near the airport.
+          </p>
+        </div>
+        <div>
+          <h3>Walking &amp; Cycling</h3>
+          <p>
+            Taniti City and Merriton Landing are walkable.
+            Bicycle rentals are available; helmets are required.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="dining">
+      <h2>Food &amp; Dining</h2>
+      <p>
+        Taniti has 10 restaurants: five focused on local fish
+        and rice, three serving American-style food, and two
+        offering Pan-Asian cuisine.
+      </p>
+
+      <div class="info-grid">
+        <div>
+          <h3>Local Cuisine</h3>
+          <p>Try locally inspired fish and rice dishes.</p>
+        </div>
+        <div>
+          <h3>Other Choices</h3>
+          <p>American-style meals and Pan-Asian options are available.</p>
+        </div>
+        <div>
+          <h3>Groceries</h3>
+          <p>
+            Two supermarkets, two small grocery stores,
+            and a convenience store open 24 hours a day.
+          </p>
+        </div>
+      </div>
+
+      <p class="note">
+        Restaurants may be closed during national holidays.
+        Check locally when planning.
+      </p>
+    </section>
+
+    <section id="visitor-info">
+      <h2>Visitor Information</h2>
+
+      <div class="info-grid">
+        <div>
+          <h3>Currency</h3>
+          <p>
+            U.S. dollars are used. Many businesses also
+            accept major credit cards, euros, or yen.
+          </p>
+        </div>
+        <div>
+          <h3>Language</h3>
+          <p>
+            Many younger residents speak English,
+            but English is less common in rural areas.
+          </p>
+        </div>
+        <div>
+          <h3>Safety &amp; Health</h3>
+          <p>
+            Violent crime is rare; stay alert for petty theft.
+            Taniti has a hospital and several clinics.
+          </p>
+        </div>
+        <div>
+          <h3>Power</h3>
+          <p>
+            Outlets use 120 volts, the same as in the United States.
+          </p>
+        </div>
+        <div>
+          <h3>Holidays</h3>
+          <p>
+            Some attractions and restaurants close on national holidays.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Visit Taniti — Interactive UX design prototype for WGU D479.
+      Informational demonstration; no reservations are processed.
+    </p>
+  </footer>
+</body>
+</html>
